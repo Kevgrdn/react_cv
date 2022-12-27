@@ -1,8 +1,9 @@
 import React from 'react'
 import { Stack, MenuItem, Menu, AppBar, Toolbar, Typography } from "@mui/material"
-import { Crown } from "lucide-react"
+import { Code, Crown } from "lucide-react"
 import { Link } from 'react-router-dom'
 
+import logo from "../assets/dev.png"
 
 function NavBar() {
 
@@ -12,20 +13,24 @@ function NavBar() {
             <AppBar position="fixed" color="primary">
                 <Toolbar>
                     <Typography variant="h6">
-                        Text
+                        <Code />
                     </Typography>
-                    <Typography >
-                        {/* <Link to="/home" >
-                            Home
-                        </Link> */}
-                        {/* <Link to="/projects" >
+                    <Typography variant='subtitle1' color="white">
+                        <Link to="/" >
                             About
                         </Link>
-                        <Link to="/education" >
-                            Contact
-                        </Link> */}
-
                     </Typography>
+                    <Typography variant='subtitle1' color="white">
+                        <Link to="/projects" >
+                            Projets
+                        </Link>
+                    </Typography>
+                    <Typography variant='subtitle1' >
+                        <Link to="/education" >
+                            Parcours
+                        </Link>
+                    </Typography>
+
                 </Toolbar>
             </AppBar>
         </>
