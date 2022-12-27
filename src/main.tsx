@@ -1,9 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Error from './pages/Error/Error'
-import Home from './pages/Home/Home'
-import Portfolio from './pages/Portfolio/Portfolio'
+import { RouterProvider } from 'react-router-dom'
 import router from './routes/routes.config'
 
 
