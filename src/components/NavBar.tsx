@@ -12,24 +12,26 @@ function NavBar() {
         <>
             <AppBar position="fixed" color="primary">
                 <Toolbar>
-                    <Typography variant="h6">
-                        <Code />
-                    </Typography>
-                    <Typography variant='subtitle1' color="white">
-                        <Link to="/" >
-                            About
-                        </Link>
-                    </Typography>
-                    <Typography variant='subtitle1' color="white">
-                        <Link to="/projects" >
-                            Projets
-                        </Link>
-                    </Typography>
-                    <Typography variant='subtitle1' >
-                        <Link to="/education" >
-                            Parcours
-                        </Link>
-                    </Typography>
+                    <Stack direction="row" spacing={2}>
+                        <Typography variant="h6">
+                            <Code />
+                        </Typography>
+                        <Typography variant='subtitle1' color="white">
+                            <Link to="/" >
+                                About
+                            </Link>
+                        </Typography>
+                        <Typography variant='subtitle1' color="white">
+                            <Link to="/projects" >
+                                Projets
+                            </Link>
+                        </Typography>
+                        <Typography variant='subtitle1' >
+                            <Link to="/education" >
+                                Parcours
+                            </Link>
+                        </Typography>
+                    </Stack>
 
                 </Toolbar>
             </AppBar>
