@@ -15,9 +15,9 @@ function NavBar() {
                         Text
                     </Typography>
                     <Typography >
-                        <Link to="/home" >
+                        {/* <Link to="/home" >
                             Home
-                        </Link>
+                        </Link> */}
                         {/* <Link to="/projects" >
                             About
                         </Link>
