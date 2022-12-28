@@ -6,8 +6,12 @@ import React from 'react'
 import NavBar from '../../components/NavBar'
 import { stackTechniqueImg } from '../../api/img'
 import { user } from '../../api/user'
+import cv from "../../assets/cv.pdf"
 
 function Home() {
+
+
+
   return (
 
     <><NavBar />

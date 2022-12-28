@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   {
     'path': '/projects',
     'element': <Portfolio />,
-    "errorElement": <Error />
+    "errorElement": <Error />,
   },
 ])
 export default router
