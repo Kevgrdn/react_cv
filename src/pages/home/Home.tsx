@@ -25,7 +25,7 @@ function Home() {
           </Stack>
           <Box flexGrow={0.3} />
           <Stack justifyContent='center'>
-            <Avatar alt="avatar" src="/src/assets/avatar.png" sx={{ width: '15rem', height: '15rem' }} />
+            <Avatar alt="avatar" src="/src/assets/photopro.jpg" sx={{ width: '15rem', height: '15rem' }} />
           </Stack>
         </Stack>
         <Stack sx={{ marginTop: '50px' }} alignItems='center'>

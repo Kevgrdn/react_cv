@@ -27,8 +27,8 @@ function NavBar() {
                             </Link>
                         </Typography>
                         <Typography variant='subtitle1' >
-                            <Link to="/education" >
-                                Parcours
+                            <Link to="/cv" >
+                                CV
                             </Link>
                         </Typography>
                     </Stack>
