@@ -6,7 +6,8 @@ import NavBar from '../../components/NavBar'
 function Cv() {
     return (
 
-        <><NavBar />
+        <>
+            <NavBar />
             <Grid container>
                 <Grid item>
                     {`${user.nom} ${user.prenom}`}
@@ -53,18 +54,19 @@ function Cv() {
                                                         {projet.frontend}
                                                     </Grid>
                                                     <Grid item>
-                                                        {projet.frontend.map((frontend) => {
+                                                        {projet.frontend.map((frontend, i) => {
                                                             return (
-                                                                <Grid item key={frontend}>
+                                                                <Grid item key={frontend
+                                                                    + i}>
                                                                     {frontend}
                                                                 </Grid>
                                                             )
                                                         })}
                                                     </Grid>
                                                     <Grid item>
-                                                        {projet.backend.map((backend) => {
+                                                        {projet.backend.map((backend, i) => {
                                                             return (
-                                                                <Grid item key={backend}>
+                                                                <Grid item key={backend + i}>
                                                                     {backend}
                                                                 </Grid>
                                                             )

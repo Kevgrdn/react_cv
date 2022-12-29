@@ -30,7 +30,7 @@ function Portfolio() {
                 <Typography variant="h2">
                     Voici la réalisation de mes projets :
                 </Typography>
-                <Grid container spacing={2} md={6} lg="auto">
+                <Grid container spacing={2}>
                     {
                         state.map((projects: any) => {
                             return (
