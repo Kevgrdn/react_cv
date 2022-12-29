@@ -1,10 +1,9 @@
 import { Stack, AppBar, Typography, Button } from "@mui/material"
-import { Briefcase, Code, Github, Home, User } from "lucide-react"
-import { Link } from 'react-router-dom'
+import { Briefcase, Code, Github, Home, Mail, User } from "lucide-react"
+import { Link, useNavigate } from 'react-router-dom'
 import { user } from '../api/user'
 
 function NavBar() {
-
 
     return (
         <>
@@ -13,79 +12,76 @@ function NavBar() {
                     backgroundColor: "#8444df"
                 }}>
                 <Stack direction="row" sx={{ my: "1rem", mx: "1rem" }} justifyContent="space-between" >
-                    <Stack justifyContent="center">
+                    <Stack justifyContent="center" direction="row" alignContent="center" alignItems="center" spacing={1}>
                         <Code />
+                        <Typography variant="h6" sx={{
+                            fontFamily: "monospace"
+                        }}>
+                            <b>
+                                {`${user.nom} ${user.prenom}`}
+                            </b>
+                        </Typography>
                     </Stack>
                     <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" >
-                        <Typography variant='subtitle1' color="white" sx={{}}>
-                            <Link to="/" >
-                                <Stack direction="row" spacing={1}>
-                                    <Stack>
-                                        <Home />
-                                    </Stack>
-                                    <Stack>
-                                        <b>
-                                            Home
-                                        </b>
-                                    </Stack>
+                        <Button component={Link} to="/" sx={{
+                            color: "white"
+                        }}>
+                            <Stack direction="row" spacing={1}>
+                                <Home />
+                                <Stack>
+                                    <b>
+                                        Home
+                                    </b>
                                 </Stack>
-                            </Link>
-                        </Typography>
-                        <Typography variant='subtitle1' color="white" sx={{}}>
-                            <Link to="/about" >
-                                <Stack direction="row" spacing={1}>
-                                    <Stack>
-                                        <User />
-                                    </Stack>
-                                    <Stack>
-                                        <b>
-                                            About
-                                        </b>
-                                    </Stack>
+                            </Stack>
+                        </Button>
+                        <Button component={Link} to="/about" sx={{
+                            color: "white"
+                        }}>
+                            <Stack direction="row" spacing={1}>
+                                <User />
+                                <Stack>
+                                    <b>
+                                        A propos
+                                    </b>
                                 </Stack>
+                            </Stack>
+                        </Button>
 
-                            </Link>
-                        </Typography>
-                        <Typography variant='subtitle1' color="white">
-                            <Link to="/projects"  >
-                                <Stack direction="row" spacing={1}>
-                                    <Stack>
-                                        <Github />
-                                    </Stack>
-                                    <Stack>
-                                        <b>
-                                            Projets
-                                        </b>
-                                    </Stack>
+                        <Button component={Link} to="/projects" sx={{
+                            color: "white"
+                        }}>
+                            <Stack direction="row" spacing={1}>
+                                <User />
+                                <Stack>
+                                    <b>
+                                        Projets
+                                    </b>
                                 </Stack>
-
-                            </Link>
-                        </Typography>
-                        <Typography variant='subtitle1' >
-                            <Link to="/cv"  >
-                                <Stack direction="row" spacing={1}>
-                                    <Stack>
-                                        <Briefcase />
-                                    </Stack>
-                                    <Stack>
-                                        <b>
-                                            CV
-                                        </b>
-                                    </Stack>
+                            </Stack>
+                        </Button>
+                        <Button component={Link} to="/cv" sx={{
+                            color: "white"
+                        }}>
+                            <Stack direction="row" spacing={1}>
+                                <Briefcase />
+                                <Stack>
+                                    <b>
+                                        CV
+                                    </b>
                                 </Stack>
-
-
-                            </Link>
-                        </Typography>
+                            </Stack>
+                        </Button>
                     </Stack>
                     <Stack>
-                        <Typography variant="subtitle2">
-                            <Button variant="contained" color="info" sx={{ backgroundColor: "white", color: "white", ":hover": { backgroundColor: "blue", color: "white" } }}>
+                        <Button variant="text" href={`mailto:${user.mail}`} color="info" sx={{ backgroundColor: "white", color: "#8444df", px: "0.5rem" }}>
+                            <Stack direction="row" spacing={1}>
+                                <Mail />
                                 <b>
-                                    <a href={`mailto:${user.mail}`}>Me contacter</a>
+                                    Me Contacter
                                 </b>
-                            </Button>
-                        </Typography>
+                            </Stack>
+                        </Button>
                     </Stack>
                 </Stack>
             </AppBar>

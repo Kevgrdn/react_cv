@@ -9,72 +9,42 @@ import { user } from '../../api/user'
 import cv from "../../assets/cv.pdf"
 import { Download } from 'lucide-react'
 
-
-function Home2() {
-
+function About() {
 
 
 
   return (
-    <Stack sx={{
-      justifyContent: "center",
-      alignContent: "center",
-      alignItems: "center",
-      height: "100vh",
-    }}>
+    <Container disableGutters >
       <NavBar />
       <Stack sx={{ marginTop: '5rem', }}>
         <Stack direction='row' justifyContent='center'>
-          <Stack alignItems='center' justifyContent='center' >
-            <Stack my={1}>
-              <Typography variant='h3' fontFamily="monospace" color="#8444df">Bonjour,</Typography>
+          <Stack alignItems='center' justifyContent='center'>
+            <Stack>
+              <Typography variant='h3' fontFamily="monospace">Bonjour,</Typography>
               <Typography variant='h2'>
                 <b>
                   {`${user.nom} ${user.prenom}`}
                 </b>
               </Typography>
-              <Typography variant='subtitle1'>
-                Un{" "}
-                <span style={{ color: "#8444df" }}>
-                  <b>
-                    développeur fullstack
-                  </b>
-                </span>
-                {" "}passionné et créatif,
-                <br />
-                prêt à créer des applications intéractives pour
-                {" "}
-                <span style={{ color: "#8444df" }}>
-                  {" "}
-                  <b>
-                    vous
-                  </b>
-                  {" "}
-                </span>
-                servir.</Typography>
             </Stack>
-            <Button variant="contained" type='button' sx={{ borderRadius: '1.5rem', backgroundColor: "#8444df" }}>
+            <Typography variant='subtitle1'>Développeur FullStack</Typography>
+            <Button variant="contained" type='button' sx={{ borderRadius: '1.5rem' }}>
               <Stack direction="row" spacing={1}>
-                <Stack justifyContent="center">
+                <Stack>
                   <Download />
                 </Stack>
                 <Stack>
-                  <Button href={cv} target="_blank" sx={{ color: "white" }}>
-                    <b>
-                      Télécharger le CV
-                    </b>
-                  </Button>
-
+                  Télécharger le CV
                 </Stack>
               </Stack>
             </Button>
           </Stack>
           <Box flexGrow={0.3} />
           <Stack justifyContent='center'>
-            <Avatar alt="avatar" src="/src/assets/photopro.jpg" sx={{ width: '15rem', height: '15rem', border: "solid #8444df 0.3rem" }} />
+            <Avatar alt="avatar" src="/src/assets/photopro.jpg" sx={{ width: '15rem', height: '15rem' }} />
           </Stack>
         </Stack>
-        <Stack sx={{ marginTop: '50px' }} alignItems='center'>
+        <Stack alignItems='center'>
           <Typography variant='h3'>Stack technique</Typography>
           <Stack direction='row' spacing={1}>
             {
@@ -89,8 +59,9 @@ function Home2() {
           </Stack>
         </Stack>
       </Stack>
-    </Stack>
+    </Container>
+
   )
 }
 
-export default Home2
+export default About

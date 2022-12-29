@@ -1,20 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 import Error from "../pages/Error/Error";
+import About from "../pages/About/About";
 import Home from "../pages/Home/Home";
-import Home2 from "../pages/Home/Home2";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import Cv from "../pages/Cv/Cv"
 
 const router = createBrowserRouter([
   {
     'path': '/',
-    'element': <Home2 />,
+    'element': <Home />,
     "errorElement": <Error />,
 
   },
   {
     'path': '/about',
-    'element': <Home />,
+    'element': <About />,
     "errorElement": <Error />,
 
   },
@@ -28,10 +28,6 @@ const router = createBrowserRouter([
     'element': <Cv />,
     "errorElement": <Error />,
   },
-  {
-    'path': '/home',
-    'element': <Home2 />,
-    "errorElement": <Error />,
-  },
+
 ])
 export default router
