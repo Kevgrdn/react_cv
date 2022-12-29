@@ -1,4 +1,5 @@
 import githubIcon from "../assets/github.png"
+import linkedinIcon from "../assets/linkedin.png"
 
 export const user = {
     nom: 'Pignolet',
@@ -139,11 +140,11 @@ export const user = {
     reseaux: [
         {
             icon: githubIcon,
-            url: "lien"
+            url: "https://github.com/DylanPignolet"
         },
         {
-            icon: "iconlinkdin",
-            url: "lien"
+            icon: linkedinIcon,
+            url: "https://www.linkedin.com/in/dylan-pignolet-8475a61b9/"
         },
     ]
 }
