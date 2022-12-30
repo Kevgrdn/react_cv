@@ -2,16 +2,11 @@ import { Box, Button, Card, CardActionArea, Container } from '@mui/material'
 import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import { Stack } from '@mui/system'
-import React from 'react'
 import NavBar from '../../components/NavBar'
-import { stackTechniqueImg } from '../../api/img'
 import { user } from '../../api/user'
-import cv from "../../assets/cv.pdf"
 import { Download } from 'lucide-react'
 
 function About() {
-
-
 
   return (
     <Container disableGutters >
@@ -48,7 +43,7 @@ function About() {
           <Typography variant='h3'>Stack technique</Typography>
           <Stack direction='row' spacing={1}>
             {
-              stackTechniqueImg.map((icon) => {
+              user.stackTechnique.map((icon) => {
                 return (<Card key={icon.alt} variant="outlined" sx={{ width: '3.5rem', height: '3.3rem', padding: '0.7rem', backgroundColor: '#F0FFFF', border: '#F0FFFF' }}>
                   <CardActionArea>
                     <img alt={icon.alt} src={icon.icon} width='100%' height='100%' />

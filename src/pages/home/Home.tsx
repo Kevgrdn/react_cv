@@ -1,17 +1,17 @@
-import { Box, Button, Card, CardActionArea, Container, CardMedia, CardActions } from '@mui/material'
+import { Button, Card } from '@mui/material'
 import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import { Stack } from '@mui/system'
-import React from 'react'
 import NavBar from '../../components/NavBar'
-import { stackTechniqueImg } from '../../api/img'
 import { user } from '../../api/user'
 import cv from "../../assets/cv.pdf"
 import { Download } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 
 function Home() {
 
+  const navigate = useNavigate()
 
   return (
 
@@ -51,7 +51,8 @@ function Home() {
                     </b>
                     {" "}
                   </span>
-                  servir.</Typography>
+                  servir.
+                </Typography>
               </Stack>
               <Stack direction="row" spacing={3}>
                 <Button variant="contained" type='button' sx={{ borderRadius: '1.5rem', backgroundColor: "#8444df" }}>
@@ -69,9 +70,26 @@ function Home() {
                 {
                   user.reseaux.map((socials) => {
                     return (
-                      <Card key={socials.url} sx={{ width: '3.5rem', height: '3.3rem', padding: '0.7rem', backgroundColor: '#F0FFFF', border: '#F0FFFF', objectFit: "fill" }}>
-                        <img src={socials.icon} alt={socials.url} />
-                      </Card>)
+                      <Stack justifyContent="center">
+                        <Card
+                          key={socials.url}
+                          onClick={() => window.open(socials.url, "_blank")}
+                          sx={{
+                            width: '1rem',
+                            height: "1rem",
+                            padding: '0.7rem',
+                            backgroundColor: '#F0FFFF',
+                            border: '#F0FFFF',
+                            objectFit: "fill",
+                            ":hover": {
+                              backgroundColor: "rgb(229, 228, 226)",
+                              cursor: "pointer"
+                            }
+                          }}>
+                          <img src={socials.icon} alt={socials.url} height="100%" width="100%" />
+                        </Card>
+                      </Stack>
+                    )
                   })
                 }
               </Stack>
