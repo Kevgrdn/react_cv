@@ -57,7 +57,7 @@ function Portfolio() {
                                                             </b>
                                                             <span
                                                                 style={{
-                                                                    color: "#8444df                                                            "
+                                                                    color: "#8444df"
                                                                 }}>
                                                                 {projects.name}
                                                             </span>

@@ -4,6 +4,7 @@ import About from "../pages/About/About";
 import Home from "../pages/Home/Home";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import Cv from "../pages/Cv/Cv"
+import Page from "../components/Page";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     'path': '/cv',
     'element': <Cv />,
+    "errorElement": <Error />,
+  },
+  {
+    'path': '/test',
+    'element': <Page />,
     "errorElement": <Error />,
   },
 

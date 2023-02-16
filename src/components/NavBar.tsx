@@ -9,7 +9,8 @@ function NavBar() {
         <>
             <AppBar position="fixed"
                 sx={{
-                    backgroundColor: "#8444df"
+                    backgroundColor: "#8444df",
+                    height: "7vh"
                 }}>
                 <Stack direction="row" sx={{ my: "1rem", mx: "1rem" }} justifyContent="space-between" >
                     <Stack justifyContent="center" direction="row" alignContent="center" alignItems="center" spacing={1}>
