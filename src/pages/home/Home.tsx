@@ -40,16 +40,13 @@ function Home() {
                       développeur fullstack
                     </b>
                   </span>
-                  {" "}passionné et créatif,
+                  passionné et créatif,
                   <br />
                   prêt à créer des applications intéractives pour
-                  {" "}
                   <span style={{ color: "#8444df" }}>
-                    {" "}
                     <b>
                       vous
                     </b>
-                    {" "}
                   </span>
                   servir.
                 </Typography>
