@@ -1,5 +1,4 @@
 import githubIcon from "../assets/stack-technique/github.png"
-import linkedinIcon from "../assets/linkedin.png"
 import reactIcon from '../assets/stack-technique/react.png'
 import vuejsIcon from '../assets/stack-technique/vuejs.png'
 import nodejsIcon from '../assets/stack-technique/nodejs.png'
@@ -17,153 +16,122 @@ import typescriptIcon from '../assets/stack-technique/typescript.png'
 import vscodeIcon from '../assets/stack-technique/vscode.png'
 
 
-
 export const user = {
-    nom: 'Pignolet',
-    prenom: 'Dylan',
-    mail: 'dylan.pignolet2@gmail.com',
-    tel: "0751688392",
-    githubData: "https://api.github.com/users/DylanPignolet/repos",
-    adresse: {
-        rue: "1 carrefour des poètes",
-        ville: "Monts",
-        cp: 37260
-    },
+    nom: 'Grondin',
+    prenom: 'Kévin',
+    mail: "kevin.grdn37800@gmail.com",
+    tel: "0672611575",
     permis: "B",
     vehiculePerso: true,
-    description: "",
+    description: "Ma reconversion dans les métiers du numérique est bien plus qu'une passion, c'est un projet de vie !",
+    adresse: {
+        rue: "231, rue auguste chevallier",
+        ville: "Tours",
+        cp: 37000
+    },
     experiences: [
         {
-            nom: 'Technicien Helpdesk',
-            entreprise: 'Econocom',
-            lieu: 'Tours',
-            dateDebut: 'Juin 2022',
-            dateFin: "Aujourd'hui",
-            description: "Prise d'appels, communication client, résolution d'incidents informatique."
-        },
-        {
-            nom: 'Développeur web',
-            entreprise: 'OpenClassrooms',
-            lieu: 'Tours',
-            dateDebut: 'Août 2021',
-            dateFin: "Mars 2022",
+            nom: "Développeur Web - Parcours diplômant RNCP - Réalisation de 6 projets professionnels en 9 mois",
+            entreprise: "OpenClassrooms",
+            lieu: "Tours",
+            dateDebut: "Mars 2021",
+            dateFin: "Novembre 2021",
             projets: [
                 {
                     nom: "Création d'un réseau social d'entreprise",
-                    frontend: ["VueJS", "Vuetify", "Javascript"],
-                    backend: ["NodeJS", "Javascript", "Express", "Sequelize", "MySQL"],
-                    lien: "lien"
+                    frontend: ["VueJS", "SASS", "Bootstrap", "Javascript"],
+                    backend: ["Angular", "NodeJS", "Javascript", "Express (API REST)", "Sequelize (MySQL)"],
+                    lien: "MonLien"
                 },
                 {
                     nom: "Création d'une API sécurisée",
                     frontend: [],
-                    backend: ["Angular", "NodeJS", "Javascript", "Express", "MongoDB"],
-                    lien: "lien"
+                    backend: ["Angular", "NodeJS", "Javascript", "Express (API REST)", "MongoDB"],
+                    lien: "MonLien"
                 },
                 {
-                    nom: "Création d'un site e-commerce",
-                    frontend: ["HTML", "CSS", "Javascript"],
+                    nom: "Création d'un site e-commerce ",
+                    frontend: ["HTML", "CSS", "SASS", "Bootstrap", "Javascript"],
                     backend: [],
-                    lien: "lien"
+                    lien: "MonLien"
                 },
                 {
-                    nom: "Amélioration du référencement d'un site web",
-                    frontend: ["HTML", "CSS"],
+                    nom: "Amélioration du référencement d'un blog ",
+                    frontend: ["HTML, CSS"],
                     backend: [],
-                    lien: "lien"
+                    lien: "MonLien"
                 },
                 {
                     nom: "Dynamisation d'une page web avec des animations",
                     frontend: ["HTML", "CSS", "SASS"],
                     backend: [],
-                    lien: "lien"
+                    lien: "MonLien"
                 },
                 {
                     nom: "Création d'un site à partir d'une maquette",
                     frontend: ["HTML", "CSS"],
                     backend: [],
-                    lien: "lien"
+                    lien: "MonLien"
                 }
-            ]
+            ],
         },
         {
-            nom: "Professeur d'anglais stagiaire",
-            entreprise: 'Education Nationale',
-            lieu: 'Lycée Emile Zola - Châteaudun',
-            dateDebut: 'Septembre 2019',
-            dateFin: "Août 2020",
-            description: "En charge de deux classes de Seconde. Préparation de cours, réunions parents-professeurs et conseils de classe."
-        },
-        {
-            nom: 'Agent de production',
-            entreprise: 'Thales',
-            lieu: 'Tours',
-            dateDebut: '2013',
-            dateFin: "2019",
-            description: "Inventaire, préparation de commande, conditionnement."
+            nom: "Développeur fullstack",
+            entreprise: "ASREC Centre",
+            lieu: "Tours",
+            dateDebut: "Avril 2022",
+            dateFin: "Aujourd'hui",
         }
     ],
     formations: [
         {
-            nom: "Fomartion Développeur Web",
-            dateDebut: "Août 2021",
-            dateFin: "Mars 2022",
+            nom: "Développeur web",
+            dateDebut: "Mars 2021",
+            dateFin: "Novembre 2021",
             formateur: "OpenClassrooms",
             lieu: "Tours"
         },
         {
-            nom: "Master 2 Métiers de l'enseignement, de l'éducation et de la formation - Anglais",
-            dateDebut: "Septembre 2019",
-            dateFin: "Août 2020",
+            nom: "Langues étrangères appliquées Anglais-Japonais",
+            dateDebut: "Septembre 2017",
+            dateFin: "Juin 2018 ",
+            formateur: "Université d'Orléans",
+            lieu: "Orléans"
+        },
+        {
+            nom: "Licence d'économie",
+            dateDebut: "Septembre 2014",
+            dateFin: "Juin 2016 ",
             formateur: "Université François Rabelais",
             lieu: "Tours"
         },
         {
-            nom: "Master 1 Métiers de l'enseignement, de l'éducation et de la formation - Anglais",
-            dateDebut: "Septembre 2018",
-            dateFin: "Août 2019",
-            formateur: "Université François Rabelais",
-            lieu: "Tours"
-        },
-        {
-            nom: "Licence LLCE Anglais",
-            dateDebut: "2014",
-            dateFin: "2018",
-            formateur: "Université François Rabelais",
-            lieu: "Tours"
-        },
+            nom: "Baccalauréat Sciences et Technologies de la Gestion",
+            dateDebut: "Septembre 2012",
+            dateFin: "Juin 2013 ",
+            formateur: "Lycée polyvalent François Rabelais",
+            lieu: "Chinon"
+        }
     ],
     interets: [
         {
-            titre: "Sport",
-            description: ""
+            titre: "Boxe",
+            description: "J'ai pratiqué la boxe américaine/Full Contact pendant 10 ans également lors de championnats régionnaux et de France. Celà m'a permit de devenir rigoureux et de me dépasser."
         },
         {
-            titre: "Cinéma",
-            description: ""
-        },
-        {
-            titre: "Jeux vidéos",
-            description: ""
-        },
-        {
-            titre: "High tech",
-            description: ""
-        },
-        {
-            titre: "Jeux de sociétés",
-            description: ""
-        },
+            titre: "Japon",
+            description: "Je suis un fan de la culture japonaise. Je suis également parti à Tokyo en 2018 pour une durée d'un mois afin d'approfondir ma connaissance sur les traditions japonaises."
+        }
     ],
     reseaux: [
         {
             icon: githubIcon,
-            url: "https://github.com/DylanPignolet"
+            url: "lien guy teub",
         },
         {
-            icon: linkedinIcon,
-            url: "https://www.linkedin.com/in/dylan-pignolet-8475a61b9/"
-        },
+            icon: "urlIcon2",
+            url: "line githuib..."
+        }
     ],
     stackTechnique: [
         {
@@ -231,4 +199,5 @@ export const user = {
             alt: 'vscode',
         },
     ]
+
 }

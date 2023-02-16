@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
+import NavBar from './components/NavBar'
 import router from './routes/routes.config'
 
 
